@@ -11,6 +11,7 @@ boto3 = "*"
 XlsxWriter = "*"
 numpy = "*"
 jupyter = "*"
+nb-clean = "*"
 
 [requires]
 python_version = "3.8"
