@@ -1,8 +1,10 @@
-version: '2.0'
+version: '3.2'
 services:
   notebook:
     image: kylepierce/pandas-docker-example
     ports:
     - "8888:8888"
     volumes:
-      - ./notebooks:/app/src
+      - type: bind
+        source: ./notebooks
+        target: /app/src
